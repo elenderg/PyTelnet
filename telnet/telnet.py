@@ -23,8 +23,8 @@ class telnet():
                  server.send('say hello') standard is UTF-8
         """
         self.client.send(bytes(cmd, form))
-    def recieve(self, bytess):
-        """recieve a message/command from the server
+    def receive(self, bytess):
+        """receive a message/command from the server
         example: server.recieve(1024) number of bytes
         """
         return str(self.client.recv(bytess), 'UTF-8')
